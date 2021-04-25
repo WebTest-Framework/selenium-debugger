@@ -15,7 +15,7 @@ locators along with automation scripting. Once you run your test, no errors
 can stop you from ZERO script related errors.
 
 ## Tell me how to use this ?
-This is pretty simple for you. Just download the latest <b>webtest-call.jar<b> file
+This is pretty simple for you. Just download the latest <b>webtest-call.jar</b> file
 
 *** Make sure you are using selenium standalone server with chromedriver
 installed and the server is up and running on localhost:4444
