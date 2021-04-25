@@ -2,7 +2,6 @@ import java.io.Console;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.Scanner;
-import java.util.logging.ConsoleHandler;
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -86,6 +85,7 @@ public class Main {
                         System.exit(0);
                     }
                     default: {
+                        System.out.println("Invalid command : " + driverCommand);
                         System.out.println("Enter 'exit' to exit.");
                         break;
                     }
@@ -97,7 +97,7 @@ public class Main {
         }
     }
 
-    public static boolean hostAvailabilityCheck() {
+    private static boolean hostAvailabilityCheck() {
         try (Socket s = new Socket("localhost", 4444)) {
             return true;
         } catch (IOException ex) {

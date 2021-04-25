@@ -161,6 +161,7 @@ public class Api extends ApiBase {
     public void closeBrowser() {
         HttpResponse httpResponse = api.deleteResponse(sessionId);
         sessionMap.remove(sessionId);
+        curElemXpath = curElement = sessionId = null;
         System.out.println("Closed browser");
     }
     /**
